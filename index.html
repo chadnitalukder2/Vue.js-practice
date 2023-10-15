@@ -7,13 +7,27 @@
     <script src="vue.js"></script>
 </head>
 <body>
-    <div id="app">
+    <!-- <div id="app">
     <p>{{title}}</p>
     <p>{{isItTrue}}</p>
     <p>{{cars[0]}}</p>
     <p>{{robot.name}}</p>
     <p>{{greeting()}}</p>
+</div> -->
+
+<!---------------------------------v-bind--------------------------------  -->
+<div id="app">
+    <img v-bind:src="src" v-bind:alt="alt">
+    <hr>
+    <a  v-bind:href="link">click me</a>
+    <hr>
+    <!-- --------------v-text---------------------------  -->
+    <p  v-text="myText"> </p>
+    <!---------------------- v-html --------------------->
+    <p  v-html="myHtml"> </p>
+
 </div>
+
 
 
     <script src="app.js"></script>
