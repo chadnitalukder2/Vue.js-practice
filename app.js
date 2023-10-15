@@ -7,8 +7,13 @@ new Vue({
         robot: {
             name: "Franky"
         },
-        greeting: () => {
-            return "Hello world"
-        }
+        // greeting: () => {
+        //     return "Hello world"
+        // }
+    },
+    methods: {
+        greeting() {
+          return this.title
+         }
     }
 }) ;
