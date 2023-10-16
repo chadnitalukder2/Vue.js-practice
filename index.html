@@ -17,14 +17,26 @@
 
 <!---------------------------------v-bind--------------------------------  -->
 <div id="app">
-    <img v-bind:src="src" v-bind:alt="alt">
+    <!-- <img v-bind:src="src" v-bind:alt="alt">
     <hr>
     <a  v-bind:href="link">click me</a>
-    <hr>
+    <hr> -->
     <!-- --------------v-text---------------------------  -->
     <p  v-text="myText"> </p>
     <!---------------------- v-html --------------------->
     <p  v-html="myHtml"> </p>
+    <!------------------ v-if,v-else ------------------>
+    <p v-if="userAge >= allowedAge">
+        you are good to go
+    </p>
+    <!-- <h1>Rafee</h1> -->
+    <p v-else-if="changeUser()" >
+        you are good
+    </p>
+    <p v-else>
+        you are not good to go
+    </p>
+
 
 </div>
 
