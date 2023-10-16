@@ -181,7 +181,7 @@ setTimeout(() => {
 }, 2000);*/
 
 //Use of Basic Component 
-Vue.component('rafee', {
+/*Vue.component('rafee', {
    data(){
     return {
         name: 'Luffy'
@@ -192,6 +192,46 @@ Vue.component('rafee', {
 
 new Vue({
     el: "#app-tem",
+});*/
+
+// Lifecycle of Vue JS
+new Vue({
+    el: "#lifecycle",
+    data: {
+        name: "Puja"
+    },
+    methods: {
+        updateName(){
+            this.name = "Nitesh";
+        },
+        killIt(){
+            this.$destroy();
+        }
+    },
+    beforeCreate(){
+        console.log('Running before Create');
+    },
+    created(){
+        console.log('Running created');
+    },
+    beforeMount(){
+        console.log('Running before Mount');
+    },
+    Mounted(){
+        console.log('Running created');
+    },
+    beforeUpdate(){
+        console.log('Running before Update');
+    },
+    Updated(){
+        console.log('Running Updated');
+    },
+    beforeDestroy(){
+        console.log('Running before Destroy');
+    },
+    destroyed(){
+        console.log('Running Destroyed');
+    },
 });
 
 
