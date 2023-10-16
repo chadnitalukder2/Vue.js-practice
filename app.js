@@ -180,5 +180,21 @@ setTimeout(() => {
         app1.$mount('#vue-app')
 }, 2000);*/
 
+//Use of Basic Component 
+Vue.component('rafee', {
+   data(){
+    return {
+        name: 'Luffy'
+    }
+   },
+    template: `<p>{{name}}</p>`
+});
+
+new Vue({
+    el: "#app-tem",
+});
+
+
+
 
 
