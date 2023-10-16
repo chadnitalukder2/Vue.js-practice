@@ -74,12 +74,32 @@
 <!-- <h1>{{name}}</h1>
 <button v-on:click.right="updateName('Nitesh',$event)">Click me</button>  -->
 
-<form v-on:submit.prevent>
+<!-- <form v-on:submit.prevent="handleForm">
     <input type="text">
     <button type="submit">Submit</button>
-</form>
+</form> -->
 
+<!-------------------- v-model ---------------->
+<!-- <form v-on:submit.prevent="handleForm">
+    <label >First Name : </label>
+    <input type="text" v-model="formData.firstName">
+    <hr>
+    <label >Last Name : </label>
+    <input type="text" v-model="formData.lastName">
+    <hr>
+    <button type="submit">Submit</button>
+</form> -->
 
+<!------------- computed properties -------- -->
+
+<button v-on:click="a++"> Add A</button>
+<button v-on:click="b++"> Add B</button>
+
+<p>A = {{a}}</p>
+<p>B = {{b}}</p>
+
+<p>Salary + A = {{addToA}}</p>
+<p>Salary + B = {{addToB}}</p>
 
 
 

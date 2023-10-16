@@ -88,7 +88,7 @@
     },
 });*/
 
-new Vue({
+/*new Vue({
   el: "#app",
   data: {
     name: 'Puja'
@@ -102,4 +102,51 @@ new Vue({
         console.log("submit form");
     }
   }
+});*/
+
+/*new Vue({
+    el: "#app",
+    data: {
+        formData:{
+            firstName: '',
+            lastName: '',
+        }
+    },
+    methods: {
+      handleform(){
+          console.log(this.formData);
+      }
+    }
+  });*/
+
+new Vue({
+    el: "#app",
+    data: {
+        a: 0,
+        b: 0,
+        salary: 10
+    },
+   
+        computed: {
+            addToA(){
+                console.log("add a");
+                return this.a + this.salary;
+            },
+            addToB(){
+                console.log("add b");
+                return this.b + this.salary;
+            },
+        }
+
+    
 });
+
+
+
+
+
+
+
+
+
+
