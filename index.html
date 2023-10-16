@@ -38,12 +38,21 @@
     </p> -->
 
 <!------------------- v-show-------------------->
-<p v-show="user === 'Luffy'">
+<!-- <p v-show="user === 'Luffy'">
     Show it
 </p>
 <p v-show="user !== 'Luffy'">
    Don't Show it
+</p> -->
+
+<!------------------ v-for loop ----------------------->
+<p v-for="(value, index) in cars">
+   {{index}} : {{value}}
 </p>
+<p v-for="(value, index, key) in user">
+    {{index}} : {{key}} {{value}}
+ </p>
+
 
 
 

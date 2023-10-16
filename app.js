@@ -18,7 +18,6 @@
     }
 }) ;*/
 
-
 /*new Vue({
     el: "#app",
     data: {
@@ -30,8 +29,7 @@
     }
 });*/
 
-
-new Vue ({
+/*new Vue ({
     el: "#app",
     data:{
         user: "Luffy",
@@ -43,8 +41,19 @@ new Vue ({
         return this.user ==="Luffy" ? true : false;
         }
     }
-})
+});*/
 
+new Vue({
+    el: "#app",
+    data: {
+        cars: ['BMW', 'Ford', 'Toyota'],
+        user: {
+            name: 'Luffy',
+            age: 20,
+            country:'Japan',
+        }
+    }
+});
 
 
 
