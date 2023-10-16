@@ -139,19 +139,46 @@
         } 
 });*/
 
-new Vue ({
+/*new Vue ({
     el: "#app",
     data: {
         a: 0,
         link: "http://google.com",
         name: ''
     }
+});*/
+
+//Create More Instance
+/*const app1 = new Vue({
+    el: "#app1",
+    data: {
+        value: "1st"
+    },
+    methods: {
+        changeValue(){
+            app2.value = 'changed';
+        }
+    },
 });
+const app2 = new Vue({
+    el: "#app2",
+    data: {
+        value: "2nd"
+    }
+});*/
 
-
-
-
-
+//Mount & Template
+/*const temp =  `<p>My name is {{name}}</p>`;
+ const app1 = new Vue ({
+   // el: "#vue-app",
+    data:{
+        name: "Puja"
+    },
+    template: temp
+});
+setTimeout(() => {
+        app1.$mount('#vue-app')
+}, 2000);*/
 
 
 
