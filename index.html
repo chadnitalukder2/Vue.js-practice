@@ -65,11 +65,22 @@
 <!-- <h1>{{name}}</h1>
 <button v-on:click="updateName">Click me</button> -->
 
-<div v-on:mousemove="getCoord" class="box">
+<!-- <div v-on:mousemove="getCoord" class="box">
     hover me
 </div>
 <p>X : {{x}}</p>
-<p>Y : {{y}}</p>
+<p>Y : {{y}}</p> -->
+
+<!-- <h1>{{name}}</h1>
+<button v-on:click.right="updateName('Nitesh',$event)">Click me</button>  -->
+
+<form v-on:submit.prevent>
+    <input type="text">
+    <button type="submit">Submit</button>
+</form>
+
+
+
 
 
 </div>

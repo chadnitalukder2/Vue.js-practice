@@ -69,7 +69,7 @@
     }
 });*/
 
-new Vue({
+/*new Vue({
     el: "#app",
     data:{
         name: "Puja",
@@ -86,22 +86,20 @@ new Vue({
         }
 
     },
+});*/
+
+new Vue({
+  el: "#app",
+  data: {
+    name: 'Puja'
+  },
+  methods: {
+    updateName(newname,event){
+        this.name = newname;
+        console.log(event);
+    },
+    handleform(){
+        console.log("submit form");
+    }
+  }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
