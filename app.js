@@ -119,7 +119,7 @@
     }
   });*/
 
-new Vue({
+/*new Vue({
     el: "#app",
     data: {
         a: 0,
@@ -136,12 +136,17 @@ new Vue({
                 console.log("add b");
                 return this.b + this.salary;
             },
-        }
+        } 
+});*/
 
-    
+new Vue ({
+    el: "#app",
+    data: {
+        a: 0,
+        link: "http://google.com",
+        name: ''
+    }
 });
-
-
 
 
 

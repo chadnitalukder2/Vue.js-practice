@@ -91,15 +91,27 @@
 </form> -->
 
 <!------------- computed properties -------- -->
-
-<button v-on:click="a++"> Add A</button>
+<!-- <button v-on:click="a++"> Add A</button>
 <button v-on:click="b++"> Add B</button>
 
 <p>A = {{a}}</p>
 <p>B = {{b}}</p>
 
 <p>Salary + A = {{addToA}}</p>
-<p>Salary + B = {{addToB}}</p>
+<p>Salary + B = {{addToB}}</p> -->
+
+<!------------------- Shorthand  --------------------->
+<button @click="a++">Add A</button>  <!--v-on short= : -->
+<p>A = {{a}}</p>
+<hr>
+ <a :href="link">google link</a>   <!--v-bind short= : -->
+<hr>
+<input type="text" v-model="name">
+
+
+
+
+
 
 
 
