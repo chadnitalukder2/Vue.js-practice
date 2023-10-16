@@ -26,16 +26,25 @@
     <!---------------------- v-html --------------------->
     <p  v-html="myHtml"> </p>
     <!------------------ v-if,v-else ------------------>
-    <p v-if="userAge >= allowedAge">
+    <!-- <p v-if="userAge >= allowedAge">
         you are good to go
     </p>
-    <!-- <h1>Rafee</h1> -->
+    // <h1>Rafee</h1> 
     <p v-else-if="changeUser()" >
         you are good
     </p>
     <p v-else>
         you are not good to go
-    </p>
+    </p> -->
+
+<!------------------- v-show-------------------->
+<p v-show="user === 'Luffy'">
+    Show it
+</p>
+<p v-show="user !== 'Luffy'">
+   Don't Show it
+</p>
+
 
 
 </div>
