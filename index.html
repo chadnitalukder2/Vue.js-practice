@@ -46,14 +46,30 @@
 </p> -->
 
 <!------------------ v-for loop ----------------------->
-<p v-for="(value, index) in cars">
+<!-- <p v-for="(value, index) in cars">
    {{index}} : {{value}}
 </p>
 <p v-for="(value, index, key) in user">
-    {{index}} : {{key}} {{value}}
+    {{key}} :  {{index}} : {{value}}
  </p>
+ <p v-for="n in 10">
+    {{n}}
+ </p> -->
 
+<!------------------- v-once ------------------->
+ <!-- <h1>{{name}}</h1>
+ <h1 v-once>{{name}}</h1>
+ {{update()}} -->
 
+<!------------------- event --------------->
+<!-- <h1>{{name}}</h1>
+<button v-on:click="updateName">Click me</button> -->
+
+<div v-on:mousemove="getCoord" class="box">
+    hover me
+</div>
+<p>X : {{x}}</p>
+<p>Y : {{y}}</p>
 
 
 </div>
@@ -62,4 +78,11 @@
 
     <script src="app.js"></script>
 </body>
+<style>
+    .box{
+        background-color:palevioletred;
+        width: 300px;
+        height: 300px;
+    }
+</style>
 </html>

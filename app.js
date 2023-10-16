@@ -43,7 +43,7 @@
     }
 });*/
 
-new Vue({
+/*new Vue({
     el: "#app",
     data: {
         cars: ['BMW', 'Ford', 'Toyota'],
@@ -53,7 +53,54 @@ new Vue({
             country:'Japan',
         }
     }
+});*/
+
+/*new Vue ({
+    el: "#app",
+    data: {
+        name: "Puja"
+    },
+    methods:{
+        update(){
+            setTimeout(() => {
+                this.name = 'Nitesh'
+            }, 2000);
+        },
+    }
+});*/
+
+new Vue({
+    el: "#app",
+    data:{
+        name: "Puja",
+        x: 0,
+        y: 0,
+    },
+    methods:{
+        updateName(){
+            this.name = "Nitesh";
+        },
+        getCoord(){
+            this.x = event.clientX;
+            this.y = event.clientY
+        }
+
+    },
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
