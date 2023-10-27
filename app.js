@@ -195,7 +195,7 @@ new Vue({
 });*/
 
 // Lifecycle of Vue JS
-new Vue({
+/*new Vue({
     el: "#lifecycle",
     data: {
         name: "Puja"
@@ -232,8 +232,7 @@ new Vue({
     destroyed(){
         console.log('Running Destroyed');
     },
-});
-
+});*/
 
 
 
